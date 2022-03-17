@@ -1,0 +1,45 @@
+.phone{
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    background-color: var(--bg-color);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: 0;
+}
+
+img{
+    /* margin: 0 auto; */
+    margin-left: 2.6rem;
+    width: 70%;
+    border-radius: 1.5rem;
+}
+
+
+.details-btn{
+    box-shadow: var(--box-shadow);
+    border: none;
+    background-color: var(--bg-color);
+    padding: 10px 20px;
+    border-radius: .5rem;
+    color: var(--white);
+    font-weight: 500;
+    width: 50%;
+    /* margin: 0 auto; */
+    margin-left: 5rem;
+}
+
+.details-btn:hover{
+    box-shadow: var(--box-shadow-inset);
+}
+
+@media screen and (max-width: 490px){
+    .phone{
+        width: 80%;
+        margin: 0 auto;
+    }
+    img{
+        width: 60%;
+        margin-left: 3.5rem;
+    }
+}

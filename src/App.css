@@ -1,0 +1,34 @@
+/* link google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    --white:#444;
+    --light-color:rgb(73, 69, 69);
+    --bg-color:#e6e6e6;
+    --box-shadow:.4rem .4rem 1rem #ccc,
+                -.4rem -.4rem 1rem #fff;
+    --box-shadow-inset:.4rem .4rem 1rem #ccc inset,
+                    -.4rem -.4rem 1rem #fff inset;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+body.active{
+    --black:#fff;
+    --white:#fff;
+    --light-color:#ddd;
+    --bg-color:#222;
+    --box-shadow:.4rem .4rem 1rem #111,
+                -.4rem -.4rem 1rem #333;
+    --box-shadow-inset:.4rem .4rem 1rem #111 inset,
+                      -.4rem -.4rem 1rem #333 inset;
+}
