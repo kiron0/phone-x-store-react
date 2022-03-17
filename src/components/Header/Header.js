@@ -13,7 +13,7 @@ const Header = () => {
                                 notes.</p>
                         </div>
                     </div>
-                    <div id="theme-toggler" className="fas fa-moon"></div>
+                    {/* <div id="theme-toggler" className="fas fa-moon"></div> */}
                 </div>
             </div>
 
