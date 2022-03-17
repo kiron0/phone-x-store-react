@@ -27,6 +27,13 @@ img{
     width: 50%;
     /* margin: 0 auto; */
     margin-left: 5rem;
+    outline: none;
+}
+
+.details-btn:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: var(--box-shadow);
 }
 
 .details-btn:hover{
