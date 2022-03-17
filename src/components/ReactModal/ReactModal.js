@@ -25,7 +25,7 @@ const ReactModal = (props) => {
           <Modal.Body><h4>{releaseDate}</h4></Modal.Body>
           <Modal.Body><img className="w-50" src={image} alt="" /></Modal.Body>
           <Modal.Body><h3 className='text-center'>Main Features</h3></Modal.Body>
-          <Modal.Body><h3>{mainFeatures.storage}</h3></Modal.Body>
+          {/* <Modal.Body><h3>{mainFeatures.storage}</h3></Modal.Body> */}
         </Modal>
       </div>
     );
