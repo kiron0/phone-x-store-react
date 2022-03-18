@@ -1,7 +1,12 @@
 .title{
     font-size: 1.5rem;
-    margin-right: 7rem;
+    margin-left: -23rem;
     color: var(--white);
+}
+
+.icon{
+    font-size: 2rem;
+    width: 50px;
 }
 
 .navbar{
@@ -15,6 +20,7 @@
 }
 
 .navbar-toggler-icon{
+    background-image: url("../Header/images/menu.svg") !important;
     color: var(--white) !important;
 }
 
@@ -45,8 +51,16 @@
 @media screen and (max-width: 490px) {
     .title{
         font-size: 1.3rem;
-        margin-left: 1rem;
+        margin-left: -5.5rem;
         color: var(--white);
+    }
+
+    .icon{
+        width: 40px;
+    }
+
+    .navbar{
+        height: 90px;
     }
     
     #theme-toggler{
@@ -56,4 +70,19 @@
         width: 2rem;
         line-height: 2rem;
       }
+}
+
+@media screen and (min-width: 776px) {
+    .title{
+        font-size: 2rem;
+        margin-left: -17.5rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .title{
+        font-size: 1.7rem;
+        margin-left: -36rem;
+        position: fixed;
+    }
 }

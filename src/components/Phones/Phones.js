@@ -7,9 +7,9 @@ const Phones = () => {
     const [phones, setPhones] = useState([]);
     // console.log(phones)
     useEffect(() => {
-        fetch(`https://openapi.programming-hero.com/api/phones?search=iphone`)
+        fetch(`https://openapi.programming-hero.com/api/phones?search=samsung`)
             .then(res => res.json())
-            .then(data => setPhones(data.data));
+            .then(data => setPhones(data.data.slice(0, 20)));
     }, [])
 
     return (

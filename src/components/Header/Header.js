@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css'
+import logo from '../Header/images/favicon.png'
 
 const Header = () => {
     return (
@@ -19,6 +20,7 @@ const Header = () => {
 
             <div className="navbar navbar-light py-4">
                 <div className="container">
+                    <img className='img-fluid icon' src={logo} alt="" />
                     <a href="/" className="navbar-brand d-flex align-items-center">
                         <strong className="title">Phone X Store</strong>
                     </a>

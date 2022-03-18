@@ -54,3 +54,25 @@
         margin-left: 3.5rem;
     }
 }
+
+@media screen and (min-width: 776px) {
+    .details-btn{
+        margin-left: 3rem;
+    }
+    .phone img{
+        margin-left: 2rem;
+        border-radius: 1rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .details-btn{
+        margin-left: 5rem;
+    }
+
+    .phone img{
+        margin-left: 2.6rem;
+        width: 70%;
+        border-radius: 1rem;
+    }
+}

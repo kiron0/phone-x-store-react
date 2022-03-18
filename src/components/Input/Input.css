@@ -2,7 +2,6 @@
     width: 60%;
 }
 
-
 #search-field{
     padding: 1rem;
     border: 0;
@@ -32,5 +31,17 @@
 @media screen and (max-width: 490px) {
     .input-group{
         width: 90%;
+    }
+}
+
+@media screen and (min-width: 776px) {
+    .input-group{
+        width: 85%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .input-group{
+        width: 60%;
     }
 }
