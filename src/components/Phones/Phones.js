@@ -14,7 +14,7 @@ const Phones = () => {
 
     return (
         <div className='container'>
-            <p className='text-center mt-5 mb-5 available'>Available Samsung: {phones.length}</p>
+            <p className='text-center mt-5 mb-5 available'>Available {phones.length} Samsung phones now</p>
             <div className='phones-container'>
                 {
                     phones.map(phone => <Phone phone={phone} key={phone.slug}></Phone>)
