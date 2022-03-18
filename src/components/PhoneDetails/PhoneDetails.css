@@ -1,3 +1,8 @@
+.modal-bg{
+    background-color: var(--bg-color);
+    border-radius: .5rem;
+}
+
 .phone-title{
     margin-left: 9rem;
 }
@@ -17,6 +22,7 @@
 
     .phone-img{
         width: 35%;
+        border-radius: .5rem;
     }
     .details{
         font-size: .8rem;
@@ -24,5 +30,19 @@
 
     .body-container h5{
         font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 776px) {
+    .phone-img{
+        width: 35%;
+        border-radius: .5rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .phone-img{
+        width: 40%;
+        border-radius: .6rem;
     }
 }

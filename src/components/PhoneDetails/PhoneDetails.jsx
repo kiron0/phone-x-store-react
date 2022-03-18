@@ -6,7 +6,7 @@ export default function PhoneDetails(props) {
     // console.log(props.phone);
     const { name, image, releaseDate, mainFeatures, others } = props.phone;
     return (
-        <div>
+        <div className='modal-bg'>
             <Modal.Header closeButton>
                 <Modal.Title><h4 className='text-center phone-title'>{name}</h4></Modal.Title>
             </Modal.Header>
