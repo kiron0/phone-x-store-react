@@ -12,23 +12,23 @@ export default function PhoneDetails(props) {
             </Modal.Header>
             <Modal.Body className='body-container'>
                 <img className="phone-img d-flex mx-auto mb-4" src={image} alt="" />
-                <h5 className='text-center'>{releaseDate}</h5>
+                <h5 className='text-center'>{releaseDate || 'Release date not found'}</h5>
                 <h5 className='text-center mt-4'>Main Features</h5>
                 <p className='details'>
-                    Chipset: {mainFeatures?.chipSet} <br />
-                    Display Size: {mainFeatures?.displaySize} <br />
-                    Memory: {mainFeatures?.memory} <br />
-                    Storage: {mainFeatures?.storage} <br />
-                    Sensors: {mainFeatures?.sensors.join(", ")}
+                    Chipset: {mainFeatures?.chipSet || 'Not available'} <br />
+                    Display Size: {mainFeatures?.displaySize || 'Not available'} <br />
+                    Memory: {mainFeatures?.memory || 'Not available'} <br />
+                    Storage: {mainFeatures?.storage || 'Not available'} <br />
+                    Sensors: {mainFeatures?.sensors.join(", ") || 'Not available'}
                 </p>
                 <h5 className='text-center'>Others Features</h5>
                 <p className='details'>
-                    Bluetooth: {others?.Bluetooth} <br />
-                    GPS: {others?.GPS} <br />
-                    NFC: {others?.NFC} <br />
-                    Radio: {others?.Radio} <br />
-                    USB: {others?.USB} <br />
-                    WLAN: {others?.WLAN}
+                    Bluetooth: {others?.Bluetooth || 'Not available'} <br />
+                    GPS: {others?.GPS || 'Not available'} <br />
+                    NFC: {others?.NFC || 'Not available'} <br />
+                    Radio: {others?.Radio || 'Not available'} <br />
+                    USB: {others?.USB || 'Not available'} <br />
+                    WLAN: {others?.WLAN || 'Not available'}
                 </p>
             </Modal.Body>
         </div>
