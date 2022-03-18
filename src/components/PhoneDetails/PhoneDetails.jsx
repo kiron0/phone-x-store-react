@@ -12,7 +12,7 @@ export default function PhoneDetails(props) {
             </Modal.Header>
             <Modal.Body className='body-container'>
                 <img className="phone-img d-flex mx-auto mb-4" src={image} alt="" />
-                <h5 className='text-center'>{releaseDate || 'Release date not found'}</h5>
+                <h5 className='text-center'>{releaseDate || 'Release Date is not found'}</h5>
                 <h5 className='text-center mt-4'>Main Features</h5>
                 <p className='details'>
                     Chipset: {mainFeatures?.chipSet || 'Not available'} <br />
