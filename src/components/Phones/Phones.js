@@ -7,18 +7,18 @@ const Phones = () => {
     const [phones, setPhones] = useState([]);
     // console.log(phones)
     useEffect(() => {
-        fetch('https://openapi.programming-hero.com/api/phones?search=iphone')
+        fetch('https://openapi.programming-hero.com/api/phones?search=samsung')
             .then(res => res.json())
             .then(data => setPhones(data.data));
     }, [])
 
     return (
         <div className='container'>
-            <p className='text-center mt-5 mb-5 available'>Available Iphone: {phones.length}</p>
+            <p className='text-center mt-5 mb-5 available'>Available Samsung: {phones.length}</p>
             <div className='phones-container'>
-            {
-                phones.map(phone => <Phone phone={phone} key={phone.slug}></Phone>)
-            }
+                {
+                    phones.map(phone => <Phone phone={phone} key={phone.slug}></Phone>)
+                }
             </div>
         </div>
     );

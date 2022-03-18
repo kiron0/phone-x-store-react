@@ -8,7 +8,11 @@
     border: 0;
 }
 
-img{
+.phone p{
+    font-weight: 500;
+}
+
+.phone img{
     /* margin: 0 auto; */
     margin-left: 2.6rem;
     width: 70%;
@@ -45,7 +49,7 @@ img{
         width: 80%;
         margin: 0 auto;
     }
-    img{
+    .phone img{
         width: 60%;
         margin-left: 3.5rem;
     }

@@ -1,0 +1,28 @@
+.phone-title{
+    margin-left: 9rem;
+}
+
+.phone-img{
+    width: 40%;
+}
+
+.details{
+    font-weight: 500;
+}
+
+@media screen and (max-width: 490px){
+    .phone-title{
+        margin-left: 7rem;
+    }
+
+    .phone-img{
+        width: 35%;
+    }
+    .details{
+        font-size: .8rem;
+    }
+
+    .body-container h5{
+        font-size: 1.2rem;
+    }
+}
