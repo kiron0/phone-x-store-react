@@ -56,7 +56,7 @@ const Phones = () => {
         {
           // show all button
           phones.length >= 20 ? (
-            <button onClick={handleShowAll} className="btn btn-primary">
+            <button onClick={handleShowAll} id="show-all" className="show-all">
               Show All
             </button>
           ) : null
