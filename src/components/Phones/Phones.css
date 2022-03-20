@@ -1,44 +1,92 @@
-.available{
-    font-size: 1.5rem;
-    font-weight: 700;
+.available {
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
-.phones-container{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
+.phones-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 490px) {
+  .phones-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 40px;
     margin: 0 auto;
     margin-bottom: 5rem;
-}
-
-@media screen and (max-width: 490px){
-    .phones-container{
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 40px;
-        margin: 0 auto;
-        margin-bottom: 5rem;
-    }
-    .available{
-        font-size: 1.2rem;
-        font-weight: 700;
-    }
+  }
+  .available {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
 }
 
 @media screen and (min-width: 776px) {
-    .phones-container{
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 30px;
-        margin: 0 auto;
-        margin-bottom: 5rem;
-    }
+  .phones-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
-    .phones-container{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 40px;
-        margin: 0 auto;
-        margin-bottom: 5rem;
-    }
+  .phones-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+  }
+}
+
+.input-group {
+  width: 60%;
+}
+
+#search-field {
+  padding: 1rem;
+  border: 0;
+  outline: 0;
+  box-shadow: var(--box-shadow-inset);
+  background-color: var(--bg-color);
+  color: var(--white);
+  font-weight: 700;
+}
+
+*::-webkit-input-placeholder {
+  color: var(--white) !important;
+}
+
+#search-btn {
+  border: 0;
+  background-color: var(--bg-color);
+  box-shadow: var(--box-shadow);
+  color: var(--white);
+  font-weight: 700;
+  cursor: pointer;
+}
+#search-btn:hover {
+  box-shadow: var(--box-shadow-inset);
+}
+
+@media screen and (max-width: 490px) {
+  .input-group {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 776px) {
+  .input-group {
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .input-group {
+    width: 60%;
+  }
 }
