@@ -21,7 +21,7 @@ const Phones = () => {
     <div className="container">
       <div className="input-group mb-3 mx-auto my-5 search-input">
         <input
-          onBlur={handleInputChange}
+          onChange={handleInputChange}
           id="search-field"
           type="text"
           className="form-control"
