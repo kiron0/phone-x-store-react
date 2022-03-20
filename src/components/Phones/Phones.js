@@ -17,7 +17,9 @@ const Phones = () => {
             .then((res) => res.json())
             .then((data) => setPhones(data.data));
     };
-
+    const handleSubmit = () => {
+        handleInputChange();
+    }
     return (
         <div className="container">
             <div className="input-group mb-3 mx-auto my-5 search-input">
@@ -31,7 +33,7 @@ const Phones = () => {
                     aria-describedby="button-addon2"
                 ></input>
                 <button
-                    onClick={handleInputChange}
+                    onClick={handleSubmit}
                     id="search-btn"
                     className="btn btn-outline-secondary"
                     type="button"
