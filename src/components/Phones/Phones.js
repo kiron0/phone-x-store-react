@@ -8,15 +8,23 @@ const Phones = () => {
   useEffect(() => {
     fetch(`https://openapi.programming-hero.com/api/phones?search=apple`)
       .then((res) => res.json())
-      .then((data) => setPhones(data.data));
+      .then((data) => setPhones(data.data.slice(0, 20)));
   }, []);
   //   handle input change & add to search field
   const handleInputChange = (e) => {
-    const { value } = e.target;
+    const value = e.target.value;
     fetch(`https://openapi.programming-hero.com/api/phones?search=${value}`)
+      .then((res) => res.json())
+      .then((data) => setPhones(data.data.slice(0, 20)));
+    handleShowAll(value);
+  };
+
+  const handleShowAll = (e) => {
+    fetch(`https://openapi.programming-hero.com/api/phones?search=${e}`)
       .then((res) => res.json())
       .then((data) => setPhones(data.data));
   };
+
   return (
     <div className="container">
       <div className="input-group mb-3 mx-auto my-5 search-input">
@@ -45,6 +53,14 @@ const Phones = () => {
         {phones.map((phone) => (
           <Phone phone={phone} key={phone.slug}></Phone>
         ))}
+        {
+          // show all button
+          phones.length >= 20 ? (
+            <button onClick={handleShowAll} className="btn btn-primary">
+              Show All
+            </button>
+          ) : null
+        }
       </div>
     </div>
   );
