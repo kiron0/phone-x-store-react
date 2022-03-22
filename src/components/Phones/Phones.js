@@ -8,19 +8,13 @@ const Phones = () => {
   useEffect(() => {
     fetch(`https://openapi.programming-hero.com/api/phones?search=apple`)
       .then((res) => res.json())
-      .then((data) => setPhones(data.data.slice(0, 20)));
+      .then((data) => setPhones(data.data));
   }, []);
+  
   //   handle input change & add to search field
   const handleInputChange = (e) => {
     const value = e.target.value;
     fetch(`https://openapi.programming-hero.com/api/phones?search=${value}`)
-      .then((res) => res.json())
-      .then((data) => setPhones(data.data.slice(0, 20)));
-    handleShowAll(value);
-  };
-
-  const handleShowAll = (e) => {
-    fetch(`https://openapi.programming-hero.com/api/phones?search=${e}`)
       .then((res) => res.json())
       .then((data) => setPhones(data.data));
   };
@@ -37,14 +31,6 @@ const Phones = () => {
           aria-label=""
           aria-describedby="button-addon2"
         ></input>
-        <button
-          onClick={() => handleInputChange()}
-          id="search-btn"
-          className="btn btn-outline-secondary"
-          type="button"
-        >
-          Search
-        </button>
       </div>
       <p className="text-center mt-5 mb-5 available">
         Available {phones.length} {phones[0]?.brand} phones now
@@ -53,14 +39,6 @@ const Phones = () => {
         {phones.map((phone) => (
           <Phone phone={phone} key={phone.slug}></Phone>
         ))}
-        {
-          // show all button
-          phones.length >= 20 ? (
-            <button onClick={handleShowAll} id="show-all" className="show-all">
-              Show All
-            </button>
-          ) : null
-        }
       </div>
     </div>
   );
